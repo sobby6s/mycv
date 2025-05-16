@@ -1,3 +1,4 @@
+@use "general" as *; // Importă toate variabilele fără prefix
 /*
 |----------------------------------------------------------------------------
 	1. HEADER / #header
@@ -14,7 +15,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     a {
-      color: var(--color_4);
+      color: $color_5;
     }
     img {
       max-height: 40px;
@@ -24,9 +25,6 @@
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.9);
   padding: 12px 0;
-  a {
-    color: var(--color_3);
-  }
 }
 .navbar {
   padding: 0;
@@ -45,7 +43,7 @@
           visibility: visible;
           width: 80%;
         }
-        color: var(--color_4);
+        color: $color_5;
       }
     }
   }
@@ -62,7 +60,7 @@
           bottom: -6px;
           left: 0;
           width: 0;
-          background-color: var(--background-color_1);
+          background-color: $background-color_3;
           visibility: hidden;
           transition: all 0.3s ease-in-out 0s;
         }
@@ -73,7 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--color_4);
+    color: $color_5;
     font-size: 16px;
     font-weight: 600;
     padding: 0;
@@ -86,7 +84,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      color: var(--color_4);
+      color: $color_5;
       font-size: 16px;
       font-weight: 600;
       padding: 0;
@@ -111,7 +109,7 @@
         visibility: visible;
         width: 80%;
       }
-      color: var(--color_4);
+      color: $color_5;
     }
   }
   .active {
@@ -119,9 +117,9 @@
       visibility: visible;
       width: 80%;
     }
-    color: var(--color_4);
+    color: $color_5;
     &:focus {
-      color: var(--color_4);
+      color: $color_5;
     }
   }
   .dropdown {
@@ -142,7 +140,7 @@
         min-width: 200px;
         &:hover {
           > a {
-            color: var(--color_3);
+            color: $color_3;
           }
         }
       }
@@ -150,17 +148,17 @@
         padding: 10px 20px;
         font-size: 14px;
         text-transform: none;
-        color: var(--color_1);
+        color: $color_1;
         i {
           font-size: 12px;
         }
         &:hover {
-          color: var(--color_3);
+          color: $color_3;
         }
       }
       .active {
         &:hover {
-          color: var(--color_3);
+          color: $color_3;
         }
       }
     }
@@ -189,7 +187,7 @@
   }
 }
 .mobile-nav-toggle {
-  color: var(--color_4);
+  color: $color_5;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -205,19 +203,10 @@
       display: none;
     }
   }
-
-  #header.header-scrolled {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 12px 0;
-    a {
-      color: var(--color_2);
-    }
-  }
 }
 .navbar-mobile {
   position: fixed;
-  // overflow: hidden;
-
+  overflow: hidden;
   top: 0;
   right: 0;
   left: 0;
@@ -240,9 +229,8 @@
     bottom: 15px;
     left: 15px;
     padding: 10px 0;
-    background-color: var(--background-color_1);
+    background-color: $background-color_3;
     overflow-y: auto;
-    height: fit-content;
     transition: 0.3s;
   }
   > ul {
@@ -255,15 +243,15 @@
       &:before {
         visibility: hidden;
       }
-      color: var(--color_4);
+      color: $color_3;
     }
     padding: 10px 20px;
     font-size: 15px;
-    color: var(--color_2);
+    color: $color_1;
     &:focus {
       padding: 10px 20px;
       font-size: 15px;
-      color: var(--color_4);
+      color: $color_1;
     }
   }
   li {
@@ -272,7 +260,7 @@
         &:before {
           visibility: hidden;
         }
-        color: var(--color_4);
+        color: $color_3;
       }
     }
   }
@@ -280,7 +268,7 @@
     &:before {
       visibility: hidden;
     }
-    color: var(--color_4);
+    color: $color_3;
   }
   .getstarted {
     margin: 15px;
@@ -303,7 +291,7 @@
         min-width: 200px;
         &:hover {
           > a {
-            color: var(--color_4);
+            color: $color_3;
           }
         }
       }
@@ -313,34 +301,17 @@
           font-size: 12px;
         }
         &:hover {
-          color: var(--color_4);
+          color: $color_3;
         }
       }
       .active {
         &:hover {
-          color: var(--color_4);
+          color: $color_3;
         }
       }
     }
     > .dropdown-active {
       display: block;
-    }
-  }
-}
-
-@media (max-width: 1366px) {
-  .navbar {
-    .dropdown {
-      .dropdown {
-        ul {
-          left: -90%;
-        }
-        &:hover {
-          > ul {
-            left: -100%;
-          }
-        }
-      }
     }
   }
 }

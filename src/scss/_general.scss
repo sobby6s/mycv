@@ -5,103 +5,45 @@
 |----------------------------------------------------------------------------
 */
 
-:root {
-  --particle-color: #3ec18f;
-  --border-color_1: rgba(255, 255, 255, 0.3);
-  --border-color_2: #8c0d73;
-  --color: #888888;
-  --color_1: #4e4e4e;
-  --color_2: #1e1e1e;
-  --color_3: #29a19c;
-  --color_4: #f5f5f5;
-  --color_5: #fff;
-  --color_6: #cde1f8;
-  --background-color_1: #f5f5f5;
-  --background-color_2: #cc005f;
-  --background-color_3: #497855;
-  --background-color_4: #cde1f8;
-  --background-color_5: #1b1b1b;
-  --background-color_6: #0062d3;
-  --background-color_7: rgba(0, 0, 0, 0.8);
-  --background-color_8: transparent;
-  --background-color_9: rgba(255, 255, 255, 0.4);
-  --font-family_1: "Roboto", Helvetica, Arial, sans-serif;
-  --font-family_2: "Montserrat", sans-serif;
-  --border-top-color_1: #eee;
-  --btn-color: #3ec18f;
-  --btn-color-2: #479fc8;
-  --text-color: #434343;
-  --text-color-secondary: #666;
-  --grey: #999;
-  --divider: #e8e8e8;
-  --lighter-grey: #ccc;
-  --darker-grey: #666;
-  --smoky-white: #f5f5f5;
-  --background: #dae3e7;
-  --heart: #fb866a;
-  --progressbar-title-color: #fff;
-  --dm-background: #17191c;
-  --dm-text-color: rgba(256, 256, 256, 0.9);
-  --dm-text-color-secondary: rgba(256, 256, 256, 0.7);
-  --li-padding: 5px;
-  --red: #c0392b;
-  --blue: #075997;
-  --purple: #9b59b6;
-  --orange: #ffa500;
-  --green: #03844a;
-  --reactColor: rgb(20 158 202/0.7);
-  --vueColor: #42b883;
-  --angularColor: #f9174d;
-}
+$font-family_1: fontAwesome;
+$border-color_1: rgba(255, 255, 255, 0.3);
+$border-color_2: #cc005f;
 
-[data-bs-theme="dark"] {
-  --particle-color: #cc005f;
-  --border-color_1: rgba(255, 255, 255, 0.3);
-  --border-color_2: #cc005f;
-  --color: #888888;
-  --color_1: #4e4e4e;
-  --color_2: #1e1e1e;
-  --color_3: #29a19c;
-  --color_4: #f5f5f5;
-  --color_5: #fff;
-  --color_6: #cde1f8;
-  --background-color_1: #27323a;
-  --background-color_2: #cc005f;
-  --background-color_3: #ffffff;
-  --background-color_4: #cde1f8;
-  --background-color_5: #121212;
-  --background-color_6: #0062d3;
-  --background-color_7: rgba(0, 0, 0, 0.8);
-  --background-color_8: transparent;
-  --background-color_9: rgba(255, 255, 255, 0.4);
-  --font-family_1: "Roboto", Helvetica, Arial, sans-serif;
-  --font-family_2: "Montserrat", sans-serif;
-  --border-top-color_1: #eee;
-  --btn-color: #04b962;
-  --btn-color-2: #479fc8;
-  --text-color: #434343;
-  --text-color-secondary: #666;
-  --grey: #999;
-  --divider: #e8e8e8;
-  --lighter-grey: #ccc;
-  --darker-grey: #666;
-  --smoky-white: #f5f5f5;
-  --background: #dae3e7;
-  --heart: #fb866a;
-  --progressbar-title-color: #fff;
-  --dm-background: #17191c;
-  --dm-text-color: rgba(256, 256, 256, 0.9);
-  --dm-text-color-secondary: rgba(256, 256, 256, 0.7);
-  --li-padding: 5px;
-  --red: #c0392b;
-  --blue: #075997;
-  --purple: #9b59b6;
-  --orange: #ffa500;
-  --green: #03844a;
-  --reactColor: rgb(20 158 202/0.7);
-  --vueColor: #42b883;
-  --angularColor: #f9174d;
-}
+$color: #888888;
+$color_1: #4e4e4e;
+$color_2: #1e1e1e;
+$color_3: #cc005f;
+$color_4: #f5f5f5;
+$color_5: #fff;
+$color_6: #cde1f8;
+$background-color_1: #f5f5f5;
+$background-color_2: #cc005f;
+$background-color_3: #fff;
+$background-color_4: #cde1f8;
+$background-color_5: #1b1b1b;
+$background-color_6: #0062d3;
+$background-color_7: rgba(0, 0, 0, 0.6);
+$background-color_8: transparent;
+$background-color_9: rgba(255, 255, 255, 0.4);
+$border-color_1: #cde1f8;
+$border-color_2: #cc005f;
+$border-top-color_1: #eee;
+
+$btn-color: #54ba4e;
+$btn-color-2: #479fc8;
+$text-color: #434343;
+$text-color-secondary: #666;
+$grey: #999;
+$divider: #e8e8e8;
+$lighter-grey: #ccc;
+$darker-grey: #666;
+$smoky-white: #f5f5f5;
+$background: #dae3e7;
+$heart: #fb866a;
+
+$dm-background: #17191c;
+$dm-text-color: rgba(256, 256, 256, 0.9);
+$dm-text-color-secondary: rgba(256, 256, 256, 0.7);
 
 //*************************** Theme Styles ****************************/
 // Import theme styles
@@ -111,33 +53,33 @@
 --------------------------------------------------------------*/
 
 body {
-  background-color: var(--background-color_1);
-  color: var(--color_1);
+  background-color: $background-color_1;
+  color: $color_1;
 }
 h1 {
-  color: var(--color_2);
+  color: $color_2;
 }
 h2 {
-  color: var(--color_2);
+  color: $color_2;
 }
 h3 {
-  color: var(--color_2);
+  color: $color_2;
 }
 h4 {
-  color: var(--color_2);
+  color: $color_2;
 }
 h5 {
-  color: var(--color_2);
+  color: $color_2;
 }
 h6 {
-  color: var(--color_2);
+  color: $color_2;
 }
 a {
-  color: var(--color_2);
+  color: $color_2;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   &:hover {
-    color: var(--color_3);
+    color: $color_3;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
   }
@@ -147,14 +89,14 @@ a {
 }
 .color-a {
   text-decoration: none;
-  color: var(--color_3);
+  color: $color_3;
 }
 .color-d {
-  color: var(--color_4);
+  color: $color_4;
 }
 .color-text-a {
   text-decoration: none;
-  color: var(--color_1);
+  color: $color_1;
 }
 .box-shadow {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
@@ -175,13 +117,13 @@ a {
   }
   .card-category {
     display: inline-block;
-    color: var(--color_5);
+    color: $color_5;
     padding: 0 15px 5px;
     overflow: hidden;
-    background-color: var(--background-color_2);
+    background-color: $background-color_2;
     border-radius: 4px;
     .category {
-      color: var(--color_5);
+      color: $color_5;
       display: inline-block;
       text-transform: uppercase;
       font-size: 0.7rem;
@@ -194,13 +136,13 @@ a {
     margin-top: 0.6rem;
   }
   .card-description {
-    color: var(--color_1);
+    color: $color_1;
   }
   .post-author {
     display: inline-block;
   }
   .post-date {
-    color: var(--color_1);
+    color: $color_1;
     display: inline-block;
   }
 }
@@ -209,7 +151,7 @@ a {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: var(--background-color_3);
+  background-color: $background-color_3;
   &:hover {
     img {
       transform: scale(1.3);
@@ -218,7 +160,7 @@ a {
 }
 .service-box {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-  background-color: var(--background-color_3);
+  background-color: $background-color_3;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -226,14 +168,14 @@ a {
   &:hover {
     .ico-circle {
       transition: all 500ms ease;
-      color: var(--color_5);
-      background-color: var(--background-color_2);
+      color: $color_5;
+      background-color: $background-color_2;
       box-shadow: 0 0 0 10px #cde1f8;
     }
   }
   .service-ico {
     margin-bottom: 1rem;
-    color: var(--color_2);
+    color: $color_2;
   }
   .ico-circle {
     transition: all 500ms ease;
@@ -252,7 +194,7 @@ a {
     padding: 0.4rem 0;
   }
   .s-description {
-    color: var(--color_1);
+    color: $color_1;
   }
 }
 .paralax-mf {
@@ -268,8 +210,8 @@ a {
   &:hover {
     text-decoration: none;
     box-shadow: 0 0 0 3px #cde1f8;
-    background-color: var(--background-color_6);
-    color: var(--color_5);
+    background-color: $background-color_6;
+    color: $color_5;
     transition: all 500ms ease;
   }
   display: inline-block;
@@ -310,7 +252,7 @@ a {
   background-position: center center;
 }
 .overlay-mf {
-  background-color: var(--background-color_2);
+  background-color: $background-color_2;
   position: absolute;
   top: 0;
   left: 0px;
@@ -341,7 +283,7 @@ a {
 /*--/ Title s /--*/
 .title-s {
   font-weight: 600;
-  color: var(--color_2);
+  color: $color_2;
   font-size: 1.1rem;
 }
 .title-box {
@@ -355,12 +297,12 @@ a {
 }
 .subtitle-a {
   text-decoration: none;
-  color: var(--color_1);
+  color: $color_1;
 }
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: var(--background-color_2);
+  background-color: $background-color_2;
   margin: 0 auto;
 }
 .title-box-2 {
@@ -373,7 +315,7 @@ a {
     content: "";
     position: absolute;
     height: 3px;
-    background-color: var(--background-color_2);
+    background-color: $background-color_2;
     width: 100px;
     bottom: -12px;
   }
@@ -385,23 +327,8 @@ a {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: var(--background-color_3);
+  background-color: $background-color_3;
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
-.dark-mode-toggle {
-  color: var(--color_4);
-  #darkModeIcon {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0 10px;
-  }
-  .bi-moon {
-    color: var(--reactColor);
-  }
-  .bi-sun {
-    color: var(--orange);
-  }
 }

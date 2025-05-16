@@ -1,10 +1,5 @@
 /* ---- particles.js config ---- */
 
-function getParticlesColor() {
-    const rootStyles = getComputedStyle(document.documentElement);
-    return rootStyles.getPropertyValue("--particle-color").trim();
-}
-
 particlesJS("particles-js", {
     "particles": {
         "number": {
@@ -15,7 +10,7 @@ particlesJS("particles-js", {
             }
         },
         "color": {
-            "value": getParticlesColor()
+            "value": "#04b962"
         },
         "shape": {
             "type": "circle",
@@ -27,7 +22,7 @@ particlesJS("particles-js", {
                 "nb_sides": 5
             },
             "image": {
-                "src": "images/ro.svg",
+                "src": "img/github.svg",
                 "width": 100,
                 "height": 100
             }
@@ -43,7 +38,7 @@ particlesJS("particles-js", {
             }
         },
         "size": {
-            "value": 6,
+            "value": 3,
             "random": true,
             "anim": {
                 "enable": false,

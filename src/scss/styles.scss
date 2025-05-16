@@ -14,20 +14,15 @@
 @use "banner";
 @use "social";
 @use "footer";
-@use "about";
-@use "githubapi";
-@use "contact";
-@use "experience";
-@use "portfolio";
+
 // @import "dark-mode";
 // @import "responsive";
 
-// @use "tot";
+@use "tot";
 $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
 /*
 |----------------------------------------------------------------------------
 	1. FONTS: Google Font
 |----------------------------------------------------------------------------
 */
-@import "../../node_modules/glightbox/dist/css/glightbox.min.css";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Open+Sans:400,400i,600,600i,700,700i");

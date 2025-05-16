@@ -1,3 +1,4 @@
+@use "general" as *; // Importă toate variabilele fără prefix
 /*
 |----------------------------------------------------------------------------
 	9. SOCIAL / .social-icon
@@ -14,9 +15,9 @@
   padding: 0;
 }
 .social-icon {
-  border: 1px solid var(--color_4);
+  border: 1px solid #04b962;
   border-radius: 8px 2px;
-  color: var(--color_4);
+  color: #04b962;
   display: block;
   height: 32px;
   margin-right: 5px;
@@ -174,11 +175,11 @@
     border-radius: 50%;
     line-height: 1.6;
     margin: 0 15px 0 0;
-    box-shadow: 0 0 0 3px var(--color_4);
+    box-shadow: 0 0 0 3px #0078ff;
     transition: all 500ms ease;
     &:hover {
-      background-color: var(--background-color_2);
-      color: var(--color_4);
+      background-color: $background-color_2;
+      color: $color_5;
       box-shadow: 0 0 0 3px #cde1f8;
       transition: all 500ms ease;
     }
