@@ -1,5 +1,12 @@
-@use 'variables' as *;
+/*!   
+ * Template Name: Developer - Portfolio/CV/Resume
+ * Version: Bootstrap 5.3.3 +Webpack 5.90.3 
+ * Author: Adrian Adiaconitei for LinkAcademy
+*/
+
 // Import all of Bootstrap's CSS
+@use "~bootstrap/scss/bootstrap";
+
 @use "~bootstrap-icons/font/bootstrap-icons.scss";
 @use "general";
 @use "base";
@@ -7,17 +14,20 @@
 @use "banner";
 @use "social";
 @use "footer";
-@use "tot";
+@use "about";
+@use "githubapi";
+@use "contact";
+@use "experience";
+@use "portfolio";
+// @import "dark-mode";
+// @import "responsive";
 
+// @use "tot";
 $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
-
-@use 'bootstrap/scss/bootstrap' as *;
+/*
+|----------------------------------------------------------------------------
+	1. FONTS: Google Font
+|----------------------------------------------------------------------------
+*/
+@import "../../node_modules/glightbox/dist/css/glightbox.min.css";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Open+Sans:400,400i,600,600i,700,700i");
-
-// Custom styles
-body {
-  background-color: $background-color_1;
-  color: $color_1;
-}
-
-// Add your custom styles below

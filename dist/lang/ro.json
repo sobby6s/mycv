@@ -1,0 +1,13 @@
+{
+    "title": "Website Building Bootstrap + Webpack",
+    "meniu.home": "Acasă",
+    "meniu.about": "Despre",
+    "meniu.experience": "Experienţă",
+    "meniu.portfolio": "Portofoliu",
+    "meniu.github": "Github -ul meu",
+    "meniu.contact": "Contact",
+    "typed": "Profesor, Formator, Developer, Freelancer, Designer",
+    "ct.place.name": "Nume",
+    "ct.place.message": "Mesaj",
+    "porto.pr2": "Pozitia descrierii poate fi setat in diverse pozitii top, bottom, left or right"
+}

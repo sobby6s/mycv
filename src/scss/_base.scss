@@ -1,5 +1,3 @@
-@use "variables" as *;
-
 /*------/ Prelaoder /------*/
 @keyframes animate-preloader {
   0% {
@@ -18,12 +16,12 @@
     position: fixed;
     width: 42px;
     height: 42px;
-    background-color: $background-color_2;
+    background-color: var(--background-color_2);
     opacity: 0.7;
     font-size: 1.6rem;
     line-height: 1.5;
     text-align: center;
-    color: $color_5;
+    color: var(--color_4);
     top: auto;
     left: auto;
     right: 30px;
@@ -39,19 +37,19 @@
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0078ff;
+  background: var(--vueColor);
   width: 40px;
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
   i {
     font-size: 28px;
-    color: $color_5;
+    color: var(--color_3);
     line-height: 0;
   }
   &:hover {
-    background: #298eff;
-    color: $color_5;
+    background: var(--color_4);
+    color: var(--color_3);
   }
 }
 .back-to-top.active {
@@ -66,14 +64,14 @@
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: var(--background-color_1);
   &:before {
     content: "";
     position: fixed;
     top: calc(50% - 30px);
     left: calc(50% - 30px);
-    border: 6px solid #f2f2f2;
-    border-top: 6px solid #0078ff;
+    border: 6px solid var(--color_4);
+    border-top: 6px solid var(--vueColor);
     border-radius: 50%;
     width: 60px;
     height: 60px;
