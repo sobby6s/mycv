@@ -12,7 +12,7 @@ const paths = {
   /* Path to built files directory */
   output: path.resolve(__dirname, "./dist/"),
 };
-const favicon = path.resolve(paths.source, "assets/images", "favicon.ico");
+const favicon = path.resolve(paths.source, "images", "favicon.ico");
 const myHeader = fs.readFileSync(paths.source + "/views/header.html");
 const myBanner = fs.readFileSync(paths.source + "/views/banner.html");
 const myFooter = fs.readFileSync(paths.source + "/views/footer.html");
@@ -46,7 +46,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(paths.source, "assets/images"),
+          from: path.resolve(paths.source, "images"),
           to: path.resolve(paths.output, "assets/images"),
           toType: "dir",
           globOptions: {

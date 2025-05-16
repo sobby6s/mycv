@@ -1,15 +1,23 @@
+@use 'variables' as *;
 // Import all of Bootstrap's CSS
 @use "~bootstrap-icons/font/bootstrap-icons.scss";
-@import "bootstrap/scss/bootstrap";
-
 @use "general";
 @use "base";
 @use "header";
 @use "banner";
 @use "social";
 @use "footer";
-
 @use "tot";
+
 $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
 
+@use 'bootstrap/scss/bootstrap' as *;
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Open+Sans:400,400i,600,600i,700,700i");
+
+// Custom styles
+body {
+  background-color: $background-color_1;
+  color: $color_1;
+}
+
+// Add your custom styles below
